@@ -37,6 +37,17 @@
       margin-bottom: 25px;
     }
 
+    /* separate the English line and nudge the whole paragraph up slightly */
+    .question {
+      margin-bottom: 30px; /* extra space before buttons */
+      transform: translateY(-6px); /* move paragraph a bit up */
+    }
+
+    .question .sub {
+      display: block;
+      margin-top: 10px; /* more space between the two lines */
+    }
+
     button {
       font-size: 16px;
       padding: 10px 20px;
@@ -70,8 +81,7 @@
 <body>
   <div class="card">
     <h1>Holisss ❤️</h1>
-    <p>Tengo que hacerte una preguntita…<br>
-    Will you be my Valentine? 🌹</p>
+    <p class="question">Tengo que hacerte una preguntita…<span class="sub">Will you be my Valentine? 🌹</span></p>
 
     <div class="actions">
       <button id="yes" onclick="sayYes()">Si 💘</button>
@@ -93,10 +103,10 @@
           font-family:Arial;
           text-align:center;
         ">
-          <h1>Yupiiiiii 💖🎉</h1>
+          <h1>Yupiiiiii 💖🎉🥳</h1>
           <h1>Favor de apartar el 13 de febrero desde las 6:00 PM hasta el 14 de febrero a las 11:00 AM</h1>
 
-          <p>Te amoooo, graciasssss, no te vas a arrepentirrrr.</p>
+          <p>Te amoooo, graciasssss, no te vas a arrepentirrrr</p>
         </div>
       `;
     }
